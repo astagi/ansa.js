@@ -1,6 +1,7 @@
 # ANSA JS
 
-A simple library to fetch Ansa news. Not suitable for production, made for workshop purposes.
+A simple library to fetch Ansa news. Not suitable for production, 
+made for workshop purposes.
 
 ## Include in your page
 
