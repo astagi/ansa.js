@@ -334,7 +334,26 @@ function _asyncToGenerator(fn) {
   "Cultura": "Cultura",
   "Sport": "Sport",
   "Economia": "Economia",
-  "Abruzzo": "Abruzzo"
+  "Abruzzo": "Abruzzo",
+  "Basilicata": "Basilicata",
+  "Calabria": "Calabria",
+  "Campania": "Campania",
+  "Emilia_Romagna": "Emilia Romagna",
+  "Friuli_Venezia_Giulia": "Friuli Venezia Giulia",
+  "Lazio": "Lazio",
+  "Liguria": "Liguria",
+  "Lombardia": "Lombardia",
+  "Marche": "Marche",
+  "Molise": "Molise",
+  "Piemonte": "Piemonte",
+  "Puglia": "Puglia",
+  "Sardegna": "Sardegna",
+  "Sicilia": "Sicilia",
+  "Toscana": "Toscana",
+  "Trentino_Alto_Adige": "Trentino",
+  "Umbria": "Umbria",
+  "Valle_D_Aosta": "Valle Aosta",
+  "Veneto": "Veneto"
 };
 var getNews = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(category) {
@@ -342,21 +361,15 @@ var getNews = /*#__PURE__*/function () {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          if (CATEGORIES[category]) {
-            _context.next = 2;
-            break;
-          }
-          throw new Error("Category does not exists");
-        case 2:
-          _context.next = 4;
+          _context.next = 2;
           return fetch("https://raw.githubusercontent.com/astagi/ansa-news/develop/json/".concat(category, ".json"));
-        case 4:
+        case 2:
           response = _context.sent;
-          _context.next = 7;
+          _context.next = 5;
           return response.json();
-        case 7:
+        case 5:
           return _context.abrupt("return", _context.sent);
-        case 8:
+        case 6:
         case "end":
           return _context.stop();
       }
