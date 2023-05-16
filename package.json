@@ -1,0 +1,40 @@
+{
+  "name": "ansa",
+  "version": "0.0.0",
+  "description": "News from ANSA",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astagi/ansa.js.git"
+  },
+  "keywords": [
+    "news",
+    "italy"
+  ],
+  "files": [
+    "index.js",
+    "bundle.js"
+  ],
+  "author": "Andrea Stagi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astagi/ansa.js/issues"
+  },
+  "homepage": "https://github.com/astagi/ansa.js#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "rss-to-json": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.21.8"
+  },
+  "module": "index.js"
+}
