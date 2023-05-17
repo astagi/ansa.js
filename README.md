@@ -5,6 +5,10 @@ made for workshop purposes.
 
 ## Include in your page
 
+```html
+<script src="https://unpkg.com/ansa@0.0.1/bundle.js"></script>
+```
+
 ## Usage
 
 ```js
